@@ -3,3 +3,83 @@
     padding: 0;
     border: 0;
 }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-height: 160px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.card-title {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #27ae60;
+  font-weight: 500;
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #34495e;
+}
+
+.btn-success {
+  background-color: #27ae60;
+  border-color: #27ae60;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #219150;
+}
+
+.list-group-item {
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background-color: #ecf0f1;
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    text-align: center;
+  }
+
+  .card img {
+    max-height: 120px;
+  }
+}
